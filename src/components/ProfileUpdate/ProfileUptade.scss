@@ -159,9 +159,11 @@
     }
 }
 
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 394px), screen and (max-width: 580px) {
 
-  
+  .pers-info-title{
+    max-width: 300px;
+  }
     .Profile-uptade{
         .personal-information{
             position: relative;
@@ -190,6 +192,7 @@
                             margin-bottom: 45px;
                         }
                         td{
+                            
                             input{
                                 position: absolute;
                                 left: 40px;
@@ -218,6 +221,7 @@
         .profile-tab{
             display: block;
             td{
+                max-width: 340px;
                 input{
                     width: 330px;
                 }
@@ -225,6 +229,13 @@
         }
         .saveChanges{
             width: 330px !important;
+        }
+    }
+}
+@media  screen and (max-width: 850px) {
+    .profile-password{
+        .profile-tab{
+            display: block;
         }
     }
 }

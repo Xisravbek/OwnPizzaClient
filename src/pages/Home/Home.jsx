@@ -51,7 +51,34 @@ const Home = ({categories , setCategories}) => {
         initialSlide: 0,
         arrows: false,
         responsive: [
-
+            {
+                breakpoint: 1300,
+                settings: {
+                  slidesToShow: 6,
+                  slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 6,
+                  slidesToScroll: 1,
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  initialSlide: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 1
+                }},
             {
               breakpoint: 394,
               settings: {

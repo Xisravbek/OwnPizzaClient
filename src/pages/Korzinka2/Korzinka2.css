@@ -165,6 +165,7 @@
 .info .info-div {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .info .info-div .info-item p{
     font-size: 14px;
@@ -279,7 +280,7 @@
     display: none;
 }
 
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 394px) , screen and (max-width: 870px) {
     .container2{
         max-width: 390px;
     }
@@ -382,5 +383,34 @@
     }
     hr{
         max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 1004px) {
+    .korzinka-navbar1{
+        display: block ; 
+    }
+    .korzinka-navbar1 .shopping-btn{
+        display: none !important;       
+    }
+    .korzinka-navbar3{
+        display: none ;
+    }
+}
+@media screen and (max-width: 870px) {
+    .zakaz-carousel .flex{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 700px;
+        gap: 20px;
+    }
+    hr{
+        width: 600px;
+    }
+    .dostavka-item{
+        flex-wrap: wrap
+    }
+    .dostavka , .info{
+        max-width: 700px;
     }
 }

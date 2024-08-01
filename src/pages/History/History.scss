@@ -166,7 +166,7 @@
 }
 
 
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 394px), screen and (max-width: 770px) {
     .header-icon{
         display: none;
     }

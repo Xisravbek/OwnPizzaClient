@@ -46,7 +46,7 @@
 .process-navbar1{
     display: none;
 }
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 394px), screen and (max-width: 1204px) {
     .process-navbar1{
         display: block;
     }

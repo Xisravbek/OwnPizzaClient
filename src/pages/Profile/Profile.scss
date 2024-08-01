@@ -57,7 +57,7 @@
 .media-navbar1{
     display: none;
 }
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 394px) ,screen and (max-width: 530px) {
     .media-navbar3{
         display: none;
     }
@@ -90,5 +90,18 @@
             }
         }
         
+    }
+}
+
+
+@media screen and (max-width: 1003px) {
+    .media-navbar3{
+        display: none;
+    }
+    .media-navbar1{
+        display: block;
+    }
+    .profile{
+        margin-top: 60px;
     }
 }

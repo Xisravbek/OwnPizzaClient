@@ -228,3 +228,14 @@ hr {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .nav-main{}
+    .nav-main .h4{
+        display: none;
+    }
+}
+@media screen and (max-width: 550px){
+    .nav-main .nav-right{
+        display: none;
+    }
+}
