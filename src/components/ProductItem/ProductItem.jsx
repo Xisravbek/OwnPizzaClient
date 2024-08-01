@@ -39,16 +39,19 @@ const ProductItem = ({product, handleOpenModal}) => {
     <div className="card1">
         <div className='content1'  >
           
-          <Popconfirm
-          className={'delete-product-btn'}
-            title="Удалить продукта ?"
-            onConfirm={handleDeleteProduct}
-            onCancel={cancel}
-            okText="Да"
-            cancelText="Нет"
-          >
-            <button className=''><i className="fa-solid fa-trash"></i></button>
-          </Popconfirm>
+          {
+
+            user.role == 'admin' && <Popconfirm
+            className={'delete-product-btn'}
+              title="Удалить продукта ?"
+              onConfirm={handleDeleteProduct}
+              onCancel={cancel}
+              okText="Да"
+              cancelText="Нет"
+            >
+              <button className=''><i className="fa-solid fa-trash"></i></button>
+            </Popconfirm>
+          }
         <img src={product.image.url} alt="image" />
         <div className='content1-box'>
           <h4>{product.name}</h4>
