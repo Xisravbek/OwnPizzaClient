@@ -41,7 +41,7 @@ const ProductItem = ({product, handleOpenModal}) => {
           
           {
 
-            user.role == 'admin' && <Popconfirm
+            user?.role == 'admin' && <Popconfirm
             className={'delete-product-btn'}
               title="Удалить продукта ?"
               onConfirm={handleDeleteProduct}
