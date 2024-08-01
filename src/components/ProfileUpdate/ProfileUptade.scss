@@ -1,0 +1,230 @@
+.Profile-uptade{
+    max-width: 850px;
+    margin: auto;
+    .personal-information{
+        background-color: #ffffff;
+        padding: 24px 32px;
+        border: 1px solid #F0F0F0;
+        border-radius: 12px;
+        .pers-info-top{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 16px;
+            .pers-info-title{
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 32px;
+                text-align: left;
+                color: #191919;
+            }
+            .change-info{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: center;
+                color: #F07010;
+                border: none;
+                background-color: #ffffff;
+            }
+        }
+        
+    }
+
+    table{
+        margin-bottom: 16px;
+        
+        thead{
+            tr{
+                th{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    text-align: left;
+                    color: #A5A5A5;
+                    padding-bottom: 6px;
+                    padding-right: 45px;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-align: left;
+                    padding-right: 32px;
+                    input{
+                        padding: 13px;
+                        border-radius: 6px;
+                        border: 1px solid #F0F0F0;
+                    }
+                }
+            }
+        }
+    }
+
+    .saveChanges{
+        width: Fixed (246px)px;
+        height: Hug (48px)px;
+        top: 470px;
+        left: 447px;
+        padding: 13px 24px 13px 24px;
+        gap: 10px;
+        border-radius: 6px ;
+        opacity: 0px;
+        color: white;
+        background-color: #FF7010;
+        border: none;
+    }
+    
+    .profile-password{
+        margin-top: 20px;
+        // height: 80px;
+        background-color: #ffffff;
+        padding: 24px 32px;
+        border: 1px solid #F0F0F0;
+        border-radius: 12px;
+        &-box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .acc-pass-title{
+            margin-top: 10px;
+        }
+        .change-info{
+            border: none;
+            background-color: #ffffff;
+            height: 22px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center;
+            color: #F07010;
+        }
+    }
+
+    .profile-tab{
+        margin-bottom: 15px;
+        display: flex;
+        .tr{
+            margin-bottom: 10px;
+            .th{
+                font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    text-align: left;
+                    color: #A5A5A5;
+                    padding-bottom: 6px;
+                    padding-right: 45px;
+            }
+            td{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: left;
+                padding-right: 32px;
+                
+                input{
+                    padding: 13px;
+                    border-radius: 6px;
+                    border: 1px solid #F0F0F0;
+                }
+            }
+
+        }
+    }
+    
+    .profile-follows {
+        background-color: #ffffff;
+        margin-top: 20px;
+        padding: 24px 0 24px 32px;
+        border: 1px solid #F0F0F0;
+        border-radius: 12px;
+        .acc-pass-title{
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            text-align: left;
+            color: #191919;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: left;
+            color: #191919;
+        }
+    }
+}
+
+@media screen and (max-width: 394px) {
+
+  
+    .Profile-uptade{
+        .personal-information{
+            position: relative;
+            .pers-info-top{
+                .pers-info-title{}
+                .change-info{
+                    position: absolute;
+                    bottom:16px;
+                    left: 40px;
+                }
+            }
+            div{
+                table{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                    gap: 20px;
+                    tr{
+                        display: flex;
+                        flex-direction: column;
+                        th , td{
+                            // border: 1px solid #ddd;
+                            padding: 10px;
+                            margin: 5px 0;
+                        }
+                        .formediath{
+                            margin-bottom: 45px;
+                        }
+                        td{
+                            input{
+                                position: absolute;
+                                left: 40px;
+                                width: 330px;
+                            }
+                            .th-inp1{
+                                top: 156px;
+                            }
+                            .th-inp2{
+                                top: 246px;
+                            }
+                            .th-inp3{
+                                top: 336px;
+                            }
+                            .th-inp4{
+                                top: 426px; 
+                            }
+                        }
+                    }
+                }
+            }
+            .saveChanges{
+                width: 330px;
+            }
+        }
+        .profile-tab{
+            display: block;
+            td{
+                input{
+                    width: 330px;
+                }
+            }
+        }
+        .saveChanges{
+            width: 330px !important;
+        }
+    }
+}

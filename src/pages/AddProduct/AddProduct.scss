@@ -1,0 +1,60 @@
+.add-product{
+    padding-top: 150px;
+    background-color: #F9F9F9;
+    min-height: 100vh;
+    &-box{
+        max-width: 1200px;
+        margin: auto;
+        background-color: white;
+        // height: 300px;
+        border-radius: 12px;
+        display: flex;
+        gap: 50px;
+        padding: 20px;
+        
+        .add-product-left{
+            div{
+                max-width: 300px;
+                img{
+                    width: 300px;
+                    height: 300px ;
+                    object-fit: cover;
+                }
+            }
+        }
+        .add-product-right{
+
+        }
+    }
+    .ingredients-main{
+        h3{
+            font-size: 18px;
+        }
+    }
+    .ingredinets-add{
+        max-width: 200px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        .active-extra{
+            // background-color: red;
+            border: 2px solid orange !important;
+        }
+        .ingredient-item{
+             border: 1px solid  lightgray;
+             padding: 10px;
+             margin-bottom: 15px;
+             border-radius: 8px;
+             width: 80px;
+             height: 80px;
+            img{
+                object-fit: contain;
+                width: 40px;
+                height: 40px;
+            }
+            h5{
+                font-size: 8px;
+            }
+        }
+    }
+}

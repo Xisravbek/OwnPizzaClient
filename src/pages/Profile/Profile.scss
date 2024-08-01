@@ -1,0 +1,94 @@
+.profile{
+    max-width: 1290px;
+    margin: auto;
+    padding-top: 40px;
+    min-height: 100vh;
+    .my-account-title{
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 48px;
+        text-align: left;
+    }
+    div.account{
+        display: flex;
+        max-width: 850px;
+        margin: auto;
+        justify-content: space-between;
+        padding: 40px 0 24px 0;
+        .acc-btns-box{
+            display: flex;
+            a{
+                
+            }
+        }
+        .acc-btns{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            height: 48px;
+            gap: 0px;
+            border-radius: 6px;
+            border: 1px;
+            background-color: white;
+            opacity: 0px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center;
+            color: #191919;
+            text-decoration: none ;
+        }
+        .active{
+            background-color: #FF7010;
+            color: white ;
+            // display: none;
+        }
+        .history-btn{
+           
+
+        }
+        .setting-btn{
+
+        }
+    }
+}
+
+.media-navbar1{
+    display: none;
+}
+@media screen and (max-width: 394px) {
+    .media-navbar3{
+        display: none;
+    }
+    .media-navbar1{
+        display: block;
+    }
+
+    .profile{
+        margin-top: 50px;
+        .account h2{
+            display: none !important;
+        }
+        .acc-btns-box{
+            // .history-btn{
+            //     display: none !important;
+            // }
+            .setting-btn ,.history-btn{
+                //styleName: Mobile/H2;
+                width: 250px !important;
+                font-family: Inter;
+                font-size: 24px !important;
+                font-weight: 600 !important;
+                line-height: 32px;
+                text-align: left;
+                background-color: #F9F9F9 !important;
+                color: black !important;
+            }
+            .active{
+                display: none !important;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,73 @@
+.filter-modal-header{
+    h3{
+        margin: 0;
+    }
+}
+.filter-modal-body{
+    h4{
+        color: #A5A5A5; 
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+
+    }
+    div{
+        button{
+            border: 1px solid #F0F0F0;
+            background-color: white;
+            padding: 11px 16px;
+            //styleName: Desktop/Mini;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: center;
+            border-radius: 6px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .active-filter{
+            background-color: #FF7010;
+            color: white;
+        }
+    }
+}
+.active-ing{
+    background-color: #FF7010 !important;
+    color: white;
+}
+
+.filter-modal-footer{
+    // display: none;
+    div{
+        button{
+            //styleName: Mobile/Normal;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: center;
+            width: 165px;
+            height: 44px;
+        }
+        .sbrosit{
+            color: #FF7010;
+            background-color: white;
+            margin-left: 20px;
+        }
+        .primenit-btn{
+            background-color: #FF7010;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .filter-modal-header{
+        display: none;
+    }
+    .filter-modal-footer{
+        display: block;
+    }
+}

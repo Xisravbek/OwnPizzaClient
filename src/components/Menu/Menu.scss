@@ -1,0 +1,16 @@
+.menu{
+    padding-top: 32px;
+    min-height: 100vh;
+
+    .menu-box{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .menu-box{
+        gap: 0 !important;
+    }
+}
