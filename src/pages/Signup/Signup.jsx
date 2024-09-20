@@ -85,12 +85,12 @@ const Signup = () => {
 
             
             <div className="sign-up-box">
-                <h2 className='sign-up-title'>Sign up</h2>
+                <h2 className='sign-up-title'>Регистрация</h2>
                 <p className='sign-up-text'>Сможете быстро оформлять заказы,
                 использовать бонусы</p>
                 <form onSubmit={handleSubmit} action="">
                     <label htmlFor="">
-                    <p className='name-sign sign-label'>Telephone</p>
+                    <p className='name-sign sign-label'>Телефон номер</p>
                     <PhoneInput
                             className={'phone-input'}
                             country={'uz'}
@@ -128,23 +128,23 @@ const Signup = () => {
                         />
                     </label>
                     <label htmlFor="name-input ">
-                        <p className='name-sign sign-label'>Name</p>
+                        <p className='name-sign sign-label'>Имя</p>
                         <input onChange={handleChange} name='name' type="text" className='sign-input' id='name-input' />
                     </label>
                     <label htmlFor="email-input">
-                        <p className='sign-label'>Email</p>
+                        <p className='sign-label'>Почта</p>
                         <input onChange={handleChange} name='email' className='sign-input' type="email" id='email-input'/>
                     </label>
 
                     <label htmlFor="password-input">
-                        <p className='sign-label'>Password</p>
+                        <p className='sign-label'>Пароль</p>
                         <input  onChange={handleChange} name='password' className='sign-input' type="text" id='password-input'/>
                     </label>
                     <span className='error-span'>{errorText}</span>
-                    <Link className='login-link' to={'/login'}>Login</Link>
+                    <Link className='login-link' to={'/login'}>Вход</Link>
                     <button className="sign-btn">
                         {
-                            isLoading ? "Loading..." : "Sign Up"
+                            isLoading ? "Loading..." : "Регистрация"
                         }
                     </button>
                 </form>

@@ -57,7 +57,7 @@ const Login = () => {
 
                 <div >
                     <label htmlFor="login-tel">
-                        <p className="login-inp-text">Telephone</p>
+                        <p className="login-inp-text">Телефон номер</p>
                         {/* <input type="tel" id='login-tel' className='login-inp' /> */}
                         <PhoneInput
                             className={'phone-input'}
@@ -96,12 +96,12 @@ const Login = () => {
                         />
                     </label>
                     <label htmlFor="login-pass">
-                        <p className="login-inp-text">Password</p>
+                        <p className="login-inp-text">Пароль</p>
                         <input ref={pass_ref} type="tel" id='login-pass' className='login-inp' />
                     </label>
 
                     <span className='error-span'>{wareError}</span>
-                    <Link to={'/signup'} className='signup-link'>Sign up</Link>
+                    <Link to={'/signup'} className='signup-link'>Регистрация</Link>
                     <button  onClick={handleLogin} className="sign-btn">{isLoading ? "Loading..." : "Войти"}</button>
                 </div>
 

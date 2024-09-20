@@ -45,7 +45,10 @@
             }
             form{
                 label{
-                    
+                    padding-left: 30px;
+                    .react-tel-input{
+                        margin: 0 !important;
+                    }
                     p.sign-label{
                         
                         color: #A5A5A5;
@@ -96,6 +99,10 @@
             }
         }
     }
+}
+
+.login-link{
+    padding-left: 30px;
 }
 
 @media only screen and (max-width:410px) {
