@@ -118,6 +118,7 @@ const Signup2 = () => {
                 location.latitude && location.longitude && (
                     <>
                         <MapContainer
+                        className='map-container'
                             center={[location.latitude, location.longitude]}
                             zoom={13}
                             style={{ height: "400px", width: "380px" }}
